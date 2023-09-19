@@ -14,7 +14,7 @@ int (*get_print(const char *s, int index))(va_list, char *, unsigned int)
         {"%", print_percent},
         {"b", print_binary},
         {"d", print_int}, {"i", print_int},
-        {"r", print_reverse}
+        {"r", print_reverse}, {"R", print_rot13}
     };
     int i = 0, j = 0, first_input;
 

@@ -4,7 +4,7 @@
  * @arguments: inputs
  * @buffer: buffer pointer
  * @buffIndex: buffer index
- * Return: number of chars printed.
+ * Return: number of characters.
 */
 int print_reverse(va_list arguments, char *buffer, unsigned int buffIndex)
 {

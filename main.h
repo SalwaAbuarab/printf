@@ -35,6 +35,8 @@ int print_binary(va_list arguments, char *buffer, unsigned int buffIndex);
 int print_reverse(va_list arguments, char *buffer, unsigned int buffIndex);
 /*print u*/
 int print_unsigned(va_list arguments, char *buffer, unsigned int buffSize);
+/*print R*/
+int print_rot13(va_list arguments, char *buffer, unsigned int buffIndex);
 int printy(const char *s, int index);
 int (*get_print(const char *s, int index))(va_list, char *, unsigned int);
 int print_output(char *buffer, unsigned int buffSize);
