@@ -39,14 +39,15 @@ int _printf(const char *format, ...)
                     count += pfunc(arguments, buffer, buffSize);
                     i += printy(format, i + 1);
                 }
-            }i++;
+            }
+            i++;
         }
         else
         {
-            handle_buffer(buffer, format[i], buffSize),count++;
+            handle_buffer(buffer, format[i], buffSize), count++;
         }
         for (buffSize = count; buffSize > 1024; buffSize -= 1024)
-                ;       
+            ;       
     }
     print_output(buffer, buffSize), free(buffer), va_end(arguments);
     return (count);      

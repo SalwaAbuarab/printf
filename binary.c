@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * binary_list - print decimal in binary
  * @binary: binary pointer.
@@ -10,6 +11,7 @@
 char *binary_list(char *binary, int isNegative, long int integer, int binarySize)
 {
     int i;
+    
     for (i = 0; i < binarySize; i++)
     {
         binary[binarySize] = '0';
@@ -35,7 +37,7 @@ char *binary_list(char *binary, int isNegative, long int integer, int binarySize
     {
         for (i = 0; binary[i]; i++)
         {
-            if (binary[i] == 0)
+            if (binary[i] == '0')
             {
                 binary[i] = '1';
             }

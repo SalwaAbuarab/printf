@@ -31,6 +31,8 @@ int print_str(va_list arguments, char *buffer, unsigned int buffSize);
 int print_int(va_list arguments, char *buffer, unsigned int buffIndex);
 /*print b*/
 int print_binary(va_list arguments, char *buffer, unsigned int buffIndex);
+/*print r*/
+int print_reverse(va_list arguments, char *buffer, unsigned int buffIndex);
 /*print u*/
 int print_unsigned(va_list arguments, char *buffer, unsigned int buffSize);
 int printy(const char *s, int index);

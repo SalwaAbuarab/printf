@@ -3,7 +3,7 @@
  * print_binary - print decimal in binary
  * @arguments: inputs
  * @buffer: buffer pointer
- * buffIndex: buffer pointer index
+ * @buffIndex: buffer pointer index
  * Return: number of chars printed.
 */
 int print_binary(va_list arguments, char *buffer, unsigned int buffIndex)
@@ -30,12 +30,12 @@ int print_binary(va_list arguments, char *buffer, unsigned int buffIndex)
         {
             x = 1;
         }
-        else if (x == 1)
+        if (x == 1)
         {
             buffIndex = handle_buffer(buffer, binary[i], buffIndex);
             result++;
         }   
     }
- free(binary);
- return (result);   
+    free(binary);
+    return (result);   
 }
