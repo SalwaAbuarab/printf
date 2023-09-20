@@ -12,8 +12,8 @@ int print_rot13(va_list arguments, char *buffer, unsigned int buffIndex)
     char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
     char *str;
     unsigned int i,j, x;
+    char arr[] = "(avyy)";
     str = va_arg(arguments, char *);
-    char arr[] = "(AHYY)";
     if (str == NULL)
     {
         for (i = 0; arr [i]; i++)
